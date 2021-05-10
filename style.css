@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+#root{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 1rem;
+    border: 1px solid grey;
+    padding: 0 20px 20px;
+}
+.more{
+    display: none;
+}
+.display{
+    display: block !important;
+}
+@media screen and (min-width: 600px){
+    .card {
+        flex: 1 1 calc(50% - 3rem);
+    }
+}
+@media screen and (min-width: 900px) {
+    .card{
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
